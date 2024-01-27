@@ -1,0 +1,30 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>650</x><y>90</y><w>660</w><h>230</h></coordinates><panel_attributes>OverdraftAccount
+--
+-Account: account
+-overdraftLimit : double
+-overdraftBalance : double
+--
++OverdraftAccount() &lt;&lt;Constructor&gt;&gt;
++OverdraftAccount(Account : account, overdraftLimit : double, overdraftBalance : double) &lt;&lt;Overload Constructor&gt;&gt;
++getAccount() : account
++setAccount(Account : account) : void
++getOverdraftLimit() : double
++setOverdraftLimit(overdraftLimit : double) : void
++getOverdraftBalance() : double
++setOverdraftBalance(overdraftBalance : double) : void
++overdraftWithdraw() : void
++OverdraftConvertToString() : String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>760</x><y>350</y><w>450</w><h>220</h></coordinates><panel_attributes>JointAccount
+--
+-Account: primaryAccountHolder
+-Account: secondaryAccountHolder
+-balance : double
+--
++JointAccount(Account : account1, Account : account2) &lt;&lt;OverloadConstructor&gt;&gt;
++getPrimaryAccountHolder() : Account
++getSecondaryAccountHolder() : Account
++getBalance() : double
++setBalance(balance : double) : void
++accountToString() : String
++withdraw() : void
++deposit() : void</panel_attributes><additional_attributes></additional_attributes></element></diagram>
